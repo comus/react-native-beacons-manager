@@ -15,6 +15,8 @@ declare module 'react-native-beacons-manager' {
     | 'restricted';
 
   class Beacons {
+    BeaconsEventEmitter: BeaconsManager | NativeEventEmitter | undefined;
+
     ///////////////////////////////////////////////////////
     // iOS only
     ///////////////////////////////////////////////////////
@@ -42,6 +44,7 @@ declare module 'react-native-beacons-manager' {
     ///////////////////////////////////////////////////////
     // android only
     ///////////////////////////////////////////////////////
+
     ARMA_RSSI_FILTER: string;
     RUNNING_AVG_RSSI_FILTER: string;
     PARSER_IBEACON: string;
